@@ -1,5 +1,5 @@
 
-# Galois Key Generator
+# Galois Key Generator (Irreducible)
 
 This project is a Python-based cryptographic key generator that leverages Galois Field (GF) mathematics. The tool generates secure keys based on a user-provided input sequence and an irreducible polynomial of user-defined degree.
 
@@ -27,8 +27,8 @@ To use the Galois Key Generator, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/MuhammedDemirtas/GaloisKeyGenerator.git
-    cd GaloisKeyGenerator
+    git clone https://github.com/MuhammedDemirtas/Galois-Key-Generator.git
+    cd Galois-Key-Generator
     ```
 
 2. Install the required dependencies:
@@ -38,7 +38,7 @@ To use the Galois Key Generator, follow these steps:
 
 3. Run the script:
     ```bash
-    python galois_key_generator.py
+    python Galois_Hash_Generator.py
     ```
 
 ## Usage
@@ -51,7 +51,7 @@ To use the Galois Key Generator, follow these steps:
 
 2. Run the script to generate a key. Example:
     ```bash
-    python galois_key_generator.py
+    python Galois_Hash_Generator.py
     ```
 
 3. The output will include:
@@ -62,17 +62,17 @@ To use the Galois Key Generator, follow these steps:
 
 Input parameters:
 ```python
-input_sequence = "M8S5758SÜ"
+input_sequence = "123456789"
 field_size = 7
 degree = 3
-target_length = 16
+target_length = 32
 ```
 
 Output:
 ```
-Generated irreducible polynomial: Poly(3*x**2 + 2*x + 1, x, modulus=7)
-Input Sequence: M8S5758SÜ
-Generated Key (Hexadecimal): 1b3d5f79a2c4e6
+Generated irreducible polynomial: Poly(-x**3 - x**2 - 2*x + 1, x, modulus=7)
+Input Sequence: 123456789
+Generated Key (Hexadecimal): 23320404214600641460064146006455
 ```
 
 ## Code Overview
